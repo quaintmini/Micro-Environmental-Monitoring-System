@@ -1,11 +1,6 @@
-package com.zhangtory.hj;
-
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import com.zhangtory.http.Webconn;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -90,13 +85,13 @@ import android.widget.TextView;
 					JSONArray jsonArr = new JSONArray(ret);
 					JSONObject item = jsonArr.getJSONObject(0);
 					String t = item.getInt("temp")+"";
-					String h = "Êª¶È: " + item.getInt("humi") + " %rh";
+					String h = "æ¹¿åº¦: " + item.getInt("humi") + " %rh";
 					String p = item.getInt("pm") + "";
-					String l = "¹âÕÕ: " + item.getInt("lx") + " lx";
+					String l = "å…‰ç…§: " + item.getInt("lx") + " lx";
 					String stime = item.getString("time");
-					String ti = "·şÎñÆ÷Êı¾İ¸üĞÂÊ±¼ä: " + stime.substring(8, 10) + "Ê±"
-							+ stime.substring(10, 12) + "·Ö"
-							+ stime.substring(12, 14) + "Ãë";
+					String ti = "æœåŠ¡å™¨æ•°æ®æ›´æ–°æ—¶é—´: " + stime.substring(8, 10) + "æ—¶"
+							+ stime.substring(10, 12) + "åˆ†"
+							+ stime.substring(12, 14) + "ç§’";
 					text.setText(ti);
 					text_temp.setText(t);
 					text_pm.setText(p);

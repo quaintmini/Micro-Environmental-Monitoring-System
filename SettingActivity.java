@@ -1,11 +1,10 @@
-package com.zhangtory.hj;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.zhangtory.hj.R;
-import com.zhangtory.http.Webconn;
+
 
 import android.annotation.SuppressLint;
 import android.app.Notification;

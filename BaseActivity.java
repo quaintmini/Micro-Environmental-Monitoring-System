@@ -1,5 +1,3 @@
-package com.zhangtory.hj;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -21,9 +19,9 @@ public class BaseActivity extends Activity {
 			if (keyCode == KeyEvent.KEYCODE_BACK) {
 
 				AlertDialog.Builder builder = new AlertDialog.Builder(this);
-				builder.setMessage("真的要退出吗？")
+				builder.setMessage("yes")
 						.setCancelable(false)
-						.setPositiveButton("是",
+						.setPositiveButton("no",
 								new DialogInterface.OnClickListener() {
 									public void onClick(DialogInterface dialog,
 											int id) {
@@ -31,7 +29,7 @@ public class BaseActivity extends Activity {
 										System.exit(0);
 									}
 								})
-						.setNegativeButton("否",
+						.setNegativeButton("路帽",
 								new DialogInterface.OnClickListener() {
 									public void onClick(DialogInterface dialog,
 											int id) {

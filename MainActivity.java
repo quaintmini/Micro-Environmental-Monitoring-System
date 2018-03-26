@@ -1,6 +1,6 @@
-package com.zhangtory.hj;
 
-import com.zhangtory.hj.R;
+
+
 
 import android.app.TabActivity;
 import android.content.Intent;

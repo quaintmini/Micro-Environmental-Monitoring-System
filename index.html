@@ -1,0 +1,146 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Creative-UnderConstruction Website Template | Home :: w3layouts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/ajax_realaddress.js"></script>
+<script src="js/zx.js"></script>
+
+    <!--[if lte IE 8]>
+        <script src="excanvas.js"></script>
+    <![endif]-->
+
+
+
+</head>
+
+<body>
+
+<div class="box">
+	
+    <div class="box_body">
+        <div class="top">
+           
+        </div>
+ 
+    	<div class="body_cent">
+        <div class="tab_top">
+            <table class="bor">
+                <tr>
+                    <td width="720">
+                    <span class="f1">地点</span>
+                    <span class="sel">
+                        <select>
+                        <option>选择监测点</option>
+                        </select>
+                   </span>
+               		</td>
+                    <td>
+                    <div id="mergce" class="info">
+                     
+                    </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+                <div class="mar_top"></div>
+                
+              <div class="wen">
+              	<table class="bg_td">
+                   <tr>
+                   		<td>
+                        	<div class="de">
+                            <p>
+                            <span id="td_temp" class="f2"></span><span class="f3">&#8451;</span>
+                            <span id="ts" class="f4"></span>
+                            <div class="bg_bor"></div>
+                            </p>
+                            <p>
+                            <span class="f">PM2.5浓度：<span  id="td_pm"></span>微克/立方米</span>
+                            </p>
+                            <p>
+                            <span class="f">当前湿度：<span id="td_humi"></span>%rh</span>
+                            </p>
+                            <p>
+                            <span class="f">当前光照强度：<span id="td_lx"></span> lx</span>
+                            </p>
+                             <p>
+                            <span class="f">数据来源：微环境监测中心&nbsp;&nbsp;更新时间:</span><span id="time" class="f"></span>
+                            </p>
+                            
+                            </div>
+                            
+                        </td>
+                        
+                   </tr> 
+                </table>
+              	
+              </div>  <!--wen end-->
+              
+              <div class="clear mar_top"></div>
+                
+                
+           <div id="wendu">
+               <div class="flag_img">
+              	<span class="f3">温度：</span> <img src="images/right.png" class="wh"/>
+               </div>
+               <div class="mar_top"></div>
+  			  <canvas id="canvas_temp" width="830" height="370"></canvas>
+               <div class="mar_top"></div>
+			</div>
+                
+                <div id="shidu">
+               <div class="flag_img">
+              	<span class="f3">当前湿度：</span> <img src="images/right.png" class="wh"/>
+               </div>
+               <div class="mar_top" ></div>
+  			  <canvas  id="canvas_humi" width="830" height="370"></canvas>
+               <div class="mar_top"></div>
+			</div>
+            
+            
+                 <div id="pm">
+               <div class="flag_img">
+              	<span class="f3">PM浓度：</span> <img src="images/right.png" class="wh"/>
+               </div>
+               <div class="mar_top"></div>
+  			  <canvas  id="canvas_pm" width="830" height="370"></canvas>
+               <div class="mar_top"></div>
+			</div>
+            
+                 <div id="light">
+               <div class="flag_img">
+              	<span class="f3">光照强度：</span> <img src="images/right.png" class="wh"/>
+               </div>
+               <div class="mar_top"></div>
+  			  <canvas id="canvas_lx" width="830" height="370"></canvas>
+			</div>  
+             
+        </div><!--body cent-->
+        
+        
+     
+        
+    </div><!--box body-->
+</div><!--box end-->
+
+
+
+
+
+<!--加载动画 -->
+<center>
+	<div class="Yloading"></div>
+</center>
+<!--END 加载动画 -->
+</body>
+</html>

@@ -1,12 +1,6 @@
-package com.zhangtory.hj;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import com.zhangtory.draw.DrawChart;
-import com.zhangtory.hj.R;
-import com.zhangtory.http.Webconn;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -111,9 +105,9 @@ public class RecentData extends BaseActivity {
 					JSONArray jsonArr = new JSONArray(ret);
 					JSONObject item = jsonArr.getJSONObject(0);
 					String stime = item.getString("time");
-					String ti = "·şÎñÆ÷Êı¾İ¸üĞÂÊ±¼ä: " + stime.substring(8, 10) + "Ê±"
-							+ stime.substring(10, 12) + "·Ö"
-							+ stime.substring(12, 14) + "Ãë";
+					String ti = "æœåŠ¡å™¨æ•°æ®æ›´æ–°æ—¶é—´: " + stime.substring(8, 10) + "æ—¶"
+							+ stime.substring(10, 12) + "åˆ†"
+							+ stime.substring(12, 14) + "ç§’";
 					text.setText(ti);
 					String hour = stime.substring(8, 10);
 					String min = stime.substring(10, 12);
@@ -134,21 +128,21 @@ public class RecentData extends BaseActivity {
 						sTime[i] = tem + ":" + min;
 						cnt++;
 					}
-					view_temp.SetInfo(sTime, // XÖá¿Ì¶È
-							new String[] { "", "10", "20", "30", "40" }, // YÖá¿Ì¶È
-							sTemp, // Êı¾İ
-							"¡æ");
-					view_humi.SetInfo(sTime, // XÖá¿Ì¶È
-							new String[] { "", "30", "40", "50", "60" }, // YÖá¿Ì¶È
-							sHumi, // Êı¾İ
+					view_temp.SetInfo(sTime, // Xè½´åˆ»åº¦
+							new String[] { "", "10", "20", "30", "40" }, // Yè½´åˆ»åº¦
+							sTemp, // æ•°æ®
+							"â„ƒ");
+					view_humi.SetInfo(sTime, // Xè½´åˆ»åº¦
+							new String[] { "", "30", "40", "50", "60" }, // Yè½´åˆ»åº¦
+							sHumi, // æ•°æ®
 							"%rh");
-					view_pm.SetInfo(sTime, // XÖá¿Ì¶È
-							new String[] { "", "30", "40", "50", "60" }, // YÖá¿Ì¶È
-							sPm, // Êı¾İ
+					view_pm.SetInfo(sTime, // Xè½´åˆ»åº¦
+							new String[] { "", "30", "40", "50", "60" }, // Yè½´åˆ»åº¦
+							sPm, // æ•°æ®
 							"ug/m3");
-					view_lx.SetInfo(sTime, // XÖá¿Ì¶È
-							new String[] { "", "100", "300", "500", "700" }, // YÖá¿Ì¶È
-							sLx, // Êı¾İ
+					view_lx.SetInfo(sTime, // Xè½´åˆ»åº¦
+							new String[] { "", "100", "300", "500", "700" }, // Yè½´åˆ»åº¦
+							sLx, // æ•°æ®
 							"lx");
 					view_temp.invalidate();
 					view_humi.invalidate();
